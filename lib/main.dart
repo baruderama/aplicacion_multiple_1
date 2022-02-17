@@ -1,5 +1,6 @@
 import 'package:aplicacion_multiple_1/routes/app_routes.dart';
 import 'package:aplicacion_multiple_1/screens/screens.dart';
+import 'package:aplicacion_multiple_1/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
         // home: const Listview2Screen(),
         initialRoute: AppRoutes.initialRoute,
         routes: AppRoutes.getAppRoutes(),
-        onGenerateRoute: AppRoutes.onGenerateRoute);
+        onGenerateRoute: AppRoutes.onGenerateRoute,
+        //esta propiedad es para
+        theme: AppTheme.lightTheme);
   }
 }
